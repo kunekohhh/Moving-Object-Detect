@@ -21,12 +21,7 @@ while(ret):
     all_frames.append(new_frame)
     all_frames_RGB.append(frame)
 
-print (len(all_frames))
-#print(all_frames[1])
-X=[]
-Y=[]
-#n=0
-t=len(all_frames)
+#print (len(all_frames))
 
 for i in range (t-1):
     m = cv2.absdiff(all_frames[i],all_frames[i+1]) #compare differences
