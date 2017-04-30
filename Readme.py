@@ -22,7 +22,7 @@ while(ret):
     all_frames_RGB.append(frame)
 
 #print (len(all_frames))
-
+t=len(all_frames)
 for i in range (t-1):
     m = cv2.absdiff(all_frames[i],all_frames[i+1]) #compare differences
     ret,B=cv2.threshold(m,threshold,255,cv2.THRESH_BINARY) #binary
